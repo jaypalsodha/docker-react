@@ -7,7 +7,4 @@ before_install:
 
 
 script:
-  - docker run jaypalsodha/docker-react npm run test -- --coverage
-
-after_success:
-  - npm run coverall
+  - docker run -e CI=true jaypalsodha/docker-react npm run test
