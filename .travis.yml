@@ -5,5 +5,6 @@ services:
 before_install:
   - docker build -t jaypalsodha/docker-react -f Dockerfile.dev .
 
+  
 script:
   - docker run jaypalsodha/docker-react npm run test -- --coverage  
